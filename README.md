@@ -1,6 +1,9 @@
 # Tetro
 Unity game inspired by Tetris
 
+Controls: WASD/arrow keys, Space, and ESC
+
+Description:
 The game uses a custom shader to change vertex positions to
 create the illusion that the objects are curved around the origin.
 Furthermore, the shader also makes use of a depth buffer and
