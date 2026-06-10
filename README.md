@@ -5,7 +5,7 @@ A 3d cylindrical Tetris inspired game.
 ## Overview
 
 The game uses a displacement shader for programmatically generating curved tetromino blocks around the origin.
-It uses an advanced line clear mechanics that takes into account shape speicific chunks and uses coroutines to simulate a physics based, line by line system.
+It uses an advanced line-clear mechanic that takes into account shape specific chunks and uses coroutines to simulate a physics based, line by line system.
 It also uses a depth buffer to generate shadows for the placement of blocks.
 
 * Engine: Unity
@@ -17,7 +17,7 @@ It also uses a depth buffer to generate shadows for the placement of blocks.
 
 ### Displacement Shader
 
-The shader uses trignometry to displace vertices in order to curve them around the origin.
+The shader uses trigonometry to displace vertices in order to curve them around the origin.
 Notice the mesh is a straight line and the rendered image is cylindrical.
 
 ![Shader displacement screenshot](./screenshots/shaderDisplacement.png)
@@ -46,13 +46,13 @@ Step by step process:
 ### Challenges
 
 * Rotating curved blocks cannot be generated through static mesh
-* Grid system loops back unlike tradtional tetris
+* Grid system loops back unlike traditional tetris
 * Line clear needs to be implemented in steps to mimic physics
 
 ### Solutions
 
-* Programticaly curve blocks using displacement shader
-* Use modulus operation to caculate the grid positions from the world positions
+* Programmatically curve blocks using displacement shader
+* Use modulus operation to calculate the grid positions from the world positions
 * Implement coroutines to make every line and shape clumps act individually
 
 ## Future Improvements
